@@ -214,18 +214,18 @@ void HMI_SetLanguageCache() {
 }
 
 void HMI_SetLanguage() {
-  #if ENABLED(EEPROM_SETTINGS)
-    BL24CXX::read(DWIN_LANGUAGE_EEPROM_ADDRESS, (uint8_t*)&HMI_flag.language, sizeof(HMI_flag.language));
-  #endif
+//  #if ENABLED(EEPROM_SETTINGS)
+//    BL24CXX::read(DWIN_LANGUAGE_EEPROM_ADDRESS, (uint8_t*)&HMI_flag.language, sizeof(HMI_flag.language));
+//  #endif
   HMI_SetLanguageCache();
 }
 
 void HMI_ToggleLanguage() {
   HMI_flag.language = HMI_IsChinese() ? DWIN_ENGLISH : DWIN_CHINESE;
   HMI_SetLanguageCache();
-  #if ENABLED(EEPROM_SETTINGS)
-    BL24CXX::write(DWIN_LANGUAGE_EEPROM_ADDRESS, (uint8_t*)&HMI_flag.language, sizeof(HMI_flag.language));
-  #endif
+//  #if ENABLED(EEPROM_SETTINGS)
+//    BL24CXX::write(DWIN_LANGUAGE_EEPROM_ADDRESS, (uint8_t*)&HMI_flag.language, sizeof(HMI_flag.language));
+//  #endif
 }
 
 void DWIN_Draw_Signed_Float(uint8_t size, uint16_t bColor, uint8_t iNum, uint8_t fNum, uint16_t x, uint16_t y, long value) {

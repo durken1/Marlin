@@ -114,7 +114,7 @@
  *        Ender 3 V2 display                         SKR Mini E3 V2.0
  *                _____                                     _____
  *            5V | 1 2 | GND                            5V | 1 2 | GND
- *   (BTN_E1) A  | 3 4 | B (BTN_E2)         (BTN_EN1) PB15 | 3 4 | PB8 (BTN_E2)
+ *   (BTN_E1) A  | 3 4 | B (BTN_E2)         (BTN_EN2) PB15 | 3 4 | PB8 (BTN_E1)
  *          BEEP | 5 6   ENT (BTN_ENC)                PB9  | 5 6   RX1
  *  (SKR_RX1) TX | 7 8 | RX (SKR_TX1)                RESET | 7 8 | TX1
  *            NC | 9 10| NC                  (BEEPER) PA15 | 9 10| PB5  (BTN_ENC)
